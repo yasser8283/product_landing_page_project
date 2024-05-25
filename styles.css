@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Teachers",sans-serif;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+#navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+#navbar a:hover{
+    color: gray;
+}
+#hero{
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    color: black;
+}
+#heading{
+    background-color: #CCFF00;
+}
+#heading h2{
+    font-size: 50px;
+}
+#heading h3{
+    text-align: center;
+}
+form input[type="email"]{
+    height: 40px;
+    width: 530px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+form input[type="submit"]{
+    height: 40px;
+    margin-left: -5px;
+    width: 60px;
+    border:none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; 
+}
+#btn button{
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    background-color: rgb(222, 218, 218);
+    margin-top: 20px;
+    gap:15px;
+}
+#about p{
+    text-align: center;
+}
+#about h2{
+    background-color: #CCFF00;
+}
+#collections{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(219, 250, 250);
+}
+.card{
+    margin-top: 20px;
+    width: 300px;
+    height: 360px;
+    overflow: hidden;
+    background: linear-gradient(to right, #B2EBF2, #80DEEA);;
+    
+}
+.card img{
+    width: 80%;
+    height: 55%;
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+.card h3{
+    text-align: center;
+}
+.card p{
+    text-align: center;
+}
+.btn{
+    margin-left: 120px;
+    margin-top: 7px;
+    background-color: green;
+    height: 30px;
+    width: 80px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#collection-head{
+    margin-top: 20px;
+    text-align: center;
+    background: linear-gradient(to left,#CCFF00,white);
+    width: 50%;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color:  rgb(222, 218, 218);
+}
+#info h2{
+    background-color: #CCFF00;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:768px) {
+    #hero{
+        height: 75vh;
+        width: 100%;
+    }
+    #heading h2{
+        font-size: 45px;
+    }
+    #heading h3{
+        font-size: 15px;
+    }
+    #form input[type="email"]{
+        width: 230px;
+        margin-top: 30px;
+    }
+    #about{
+        height: 40vh;
+    }
+    #collections{
+        flex-direction: column;
+    }
+}
+
+
